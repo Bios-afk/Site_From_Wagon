@@ -1,10 +1,10 @@
-# 🚀 Portfolio - Présentation Développeur Web
+# 🚀 Site-Test - Présentation Développeur Web
 
 Bienvenue sur mon site de présentation réalisé dans le cadre de ma formation au [Le Wagon](https://www.lewagon.com/).
 
-## 👨‍💻 À propos de moi
+## 👨‍💻 À propos du repo
 
-Issu du monde de l'impression et passionné par la tech, je me réoriente aujourd'hui vers le développement web avec une spécialisation **Full-Stack**. Mon objectif : concevoir des outils web utiles, beaux et performants.
+Ceci est un site internet, exercice le wagon pour s'exercé une premiere fois sur les differentes technique de mise en page avec tu html.
 
 ## 🛠️ Technologies utilisées
 
