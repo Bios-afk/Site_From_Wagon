@@ -16,6 +16,18 @@ body {
   margin: 0;
 }
 
+.gif {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.photo-btn:has(.btn-class-name:focus) .gif {
+  opacity: 1;
+}
+
 .card {
   display: flex;
   flex-direction: column;
@@ -56,11 +68,38 @@ i:hover {
   color: black;
 }
 
+.btn-class-name {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centré sous l'image */
+  z-index: 1; /* Sous la photo */
+}
+
+.photo-btn {
+  position: relative;
+  width: fit-content;
+  height: fit-content;
+  cursor: pointer;
+}
+
 .photo_profile {
+  position: relative;
+  z-index: 2;
   width: 150px;
   height: 150px;
   object-fit: cover;
   border-radius: 50%;
+  transition: transform 1s ease, left 1s ease;
+}
+
+.photo-btn:hover .photo_profile {
+  animation: roll 2s forwards;
+}
+
+.photo-btn:hover .btn-class-name {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .btn {
@@ -101,5 +140,16 @@ i:hover {
   /* Pour un écran < 540px, cette classe CSS s'applique */
   .container {
     width: 300px;
+  }
+}
+
+@keyframes roll {
+  0% {
+    transform: rotate(0deg); /* Pas de rotation au début */
+    left: 0;
+  }
+  100% {
+    transform: rotate(180deg); /* Photo complète à 360 degrés */
+    left: 150px; /* Déplace encore plus la photo */
   }
 }
