@@ -1,0 +1,107 @@
+body {
+  background-color: rgb(208, 208, 208);
+  font-family: "Cal Sans", sans-serif;
+  font-style: normal;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+}
+
+.container {
+  /* display: flex;
+  justify-content: center;
+  flex-direction: column; */
+  display: block;
+  width: 80%;
+  margin: 0;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin: 25px auto;
+  padding: 25px;
+  width: 50%;
+  background-color: rgb(253, 253, 253);
+  box-shadow: 1px 1px 20px rgb(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.description {
+  width: 70%;
+}
+
+p {
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  gap: 26px;
+  padding: 0;
+  margin: 0;
+}
+
+.fa-brands {
+  font-size: 40px;
+  color: rgb(124, 124, 255);
+}
+
+i:hover {
+  color: black;
+}
+
+.photo_profile {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.btn {
+  width: 200px;
+  height: 60px;
+  background-color: rgb(124, 124, 255);
+  border: none;
+  transition-duration: 0.2s;
+  font-size: medium;
+  border-radius: 8px;
+}
+
+.btn:hover {
+  background-color: rgb(168, 168, 255);
+  font-size: small;
+}
+
+.footer-car {
+  background-color: rgb(253, 253, 253);
+  width: 50%;
+}
+
+@media (max-width: 960px) {
+  /* Pour un écran < 960px, cette classe CSS s'applique */
+  .container {
+    width: 700px;
+  }
+}
+
+@media (max-width: 720px) {
+  /* Pour un écran < 720px, cette classe CSS s'applique */
+  .container {
+    width: 500px;
+  }
+}
+
+@media (max-width: 540px) {
+  /* Pour un écran < 540px, cette classe CSS s'applique */
+  .container {
+    width: 300px;
+  }
+}
